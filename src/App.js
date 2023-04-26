@@ -1,14 +1,21 @@
-import { GoBell } from 'react-icons/go';
-import Button from "./Button";
+import Accordion from './components/Accordion'
 
 function App() {
-    return (
-        <div>
-            <div>
-                <Button secondary outline><GoBell/>OK Dawg</Button>
-            </div>
-        </div>
-    );
+
+  const items = [
+    {
+      id: '123k',
+      label: 'Can I use React?',
+      content: 'Yeah sure'
+    },
+    {
+      id: '13j2',
+      label: 'Can I use Python?',
+      content: 'Keep on learning'
+    }
+  ]
+
+  return <Accordion items={items} />;
 }
 
 export default App;
