@@ -1,21 +1,13 @@
-import Accordion from './components/Accordion'
+import Dropdown from "./components/Dropdown";
 
 function App() {
-
-  const items = [
-    {
-      id: '123k',
-      label: 'Can I use React?',
-      content: 'Yeah sure'
-    },
-    {
-      id: '13j2',
-      label: 'Can I use Python?',
-      content: 'Keep on learning'
-    }
+  const options = [
+    {label: 'Red', value: 'red'},
+    {label: 'Blue', value: 'blue'},
+    {label: 'Yellow', value: 'yellow'}
   ]
 
-  return <Accordion items={items} />;
+  return <Dropdown options={options}/>
 }
 
 export default App;
